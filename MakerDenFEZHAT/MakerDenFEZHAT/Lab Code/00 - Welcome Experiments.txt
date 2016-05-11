@@ -1,0 +1,11 @@
+﻿while (true)
+{
+    hat.D2.Color = FEZHAT.Color.Red;
+    await Task.Delay(500);
+
+    hat.D2.Color = FEZHAT.Color.Green;
+    await Task.Delay(500);
+
+    hat.D2.Color = FEZHAT.Color.Blue;
+    await Task.Delay(500);
+}
