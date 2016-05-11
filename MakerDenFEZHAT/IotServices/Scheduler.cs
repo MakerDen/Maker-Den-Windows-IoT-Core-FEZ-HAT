@@ -8,7 +8,7 @@ namespace IotServices
         Timer timer;
         bool publishing = false;
         MeasureMethod measureMethod;
-        int sampleRateInSeconds = 60;  // defauls to sample every 60 seconds
+        int sampleRateInSeconds = 60;  // defaults to sample every 60 seconds
 
         public int SampleRateInSeconds {
             get { return sampleRateInSeconds; }

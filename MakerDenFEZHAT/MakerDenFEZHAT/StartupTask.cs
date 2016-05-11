@@ -25,13 +25,13 @@ namespace MakerDenFEZHAT
 
         public async void Run(IBackgroundTaskInstance taskInstance)
         {
+            #region Expand to view variable initialisation
             deferral = taskInstance.GetDeferral();
-
             hat = await FEZHAT.CreateAsync();
-
             telemetry = new Telemetry("Sydney", "RPiFez", Publish, 10);
             iotHubCommand = new IoTHubCommand<string>(deviceClient, telemetry);
             iotHubCommand.CommandReceived += Commanding_CommandReceived;
+            #endregion
 
 
             #region Code snippets to go between the #region and #endregion tags
