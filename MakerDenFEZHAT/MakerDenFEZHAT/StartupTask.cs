@@ -1,4 +1,6 @@
-﻿using GHIElectronics.UWP.Shields;
+﻿//file name: StartupTask.cs
+
+using GHIElectronics.UWP.Shields;
 using IotServices;
 using Microsoft.Azure.Devices.Client;
 using System;
@@ -38,16 +40,14 @@ namespace MakerDenFEZHAT
 
             while (true)
             {
-                if (hat.GetLightLevel() * 100 > LIGHT_THRESHOLD)
-                {
-                    hat.D2.Color = FEZHAT.Color.Green;
-                }
-                else
-                {
-                    hat.D2.Color = FEZHAT.Color.Red;
-                }
+                hat.D2.Color = FEZHAT.Color.Red;
+                await Task.Delay(500);
 
-                await Task.Delay(500);  // Pause for 250 milliseconds
+                hat.D2.Color = FEZHAT.Color.Green;
+                await Task.Delay(500);
+
+                hat.D2.Color = FEZHAT.Color.Blue;
+                await Task.Delay(500);
             }
 
             #endregion
