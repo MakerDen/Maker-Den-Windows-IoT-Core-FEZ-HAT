@@ -1,6 +1,8 @@
 ﻿while (true)
 {
-    if (hat.GetLightLevel() * 100 > LIGHT_THRESHOLD)
+    var level = hat.GetLightLevel() * 100;
+
+    if (level > LIGHT_THRESHOLD)
     {
         hat.D2.Color = FEZHAT.Color.Green;
     }
