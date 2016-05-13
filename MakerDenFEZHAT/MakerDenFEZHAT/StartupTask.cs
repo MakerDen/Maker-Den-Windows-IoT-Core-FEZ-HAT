@@ -12,30 +12,28 @@ namespace MakerDenFEZHAT
 {
     public sealed class StartupTask : IBackgroundTask
     {
+        DeviceClient deviceClient = DeviceClient.CreateFromConnectionString("HostName=glovebox-iot-hub.azure-devices.net;DeviceId=RPiFez;SharedAccessKey=VHWMLDbUZ7EOsbeS5NfO560+xFjhrMYh5Q1Bga4wQHg=");
+
         #region Expand to view global variables
         BackgroundTaskDeferral deferral;
-        DeviceClient deviceClient;
         IoTHubCommand<String> iotHubCommand;
         Telemetry telemetry;
-        
         FEZHAT.Color publishColor = FEZHAT.Color.Green;
         FEZHAT hat;
 
         const double LIGHT_THRESHOLD = 85d;
         #endregion
-        
 
         public async void Run(IBackgroundTaskInstance taskInstance)
         {
             #region Expand to view variable initialisation
             deferral = taskInstance.GetDeferral();
             hat = await FEZHAT.CreateAsync();
-            telemetry = new Telemetry("Sydney", "RPiFez", Publish, 10);
+            telemetry = new Telemetry("Sydney", Publish);
             iotHubCommand = new IoTHubCommand<string>(deviceClient, telemetry);
             iotHubCommand.CommandReceived += Commanding_CommandReceived;
             #endregion
-
-            deviceClient = DeviceClient.CreateFromConnectionString("device connection string");
+            
 
             #region Code snippets to go between the #region and #endregion tags
 
@@ -67,7 +65,7 @@ namespace MakerDenFEZHAT
                 hat.D3.Color = publishColor;      // turn on publish indicator LED
 
                 var temperature = hat.GetTemperature(); // read temperature from the FEZ HAT
-                var light = hat.GetLightLevel();        // read light level from the FEZ HAT
+                var light = hat.GetLightLevel() * 100;        // read light level from the FEZ HAT
                 var json = telemetry.ToJson(temperature, light, 0, 0);  //serialise to JSON
 
                 var content = new Message(json);
