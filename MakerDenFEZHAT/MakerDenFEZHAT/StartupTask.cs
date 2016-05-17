@@ -12,7 +12,7 @@ namespace MakerDenFEZHAT
 {
     public sealed class StartupTask : IBackgroundTask
     {
-        DeviceClient deviceClient = DeviceClient.CreateFromConnectionString("HostName=glovebox-iot-hub.azure-devices.net;DeviceId=RPiFez;SharedAccessKey=VHWMLDbUZ7EOsbeS5NfO560+xFjhrMYh5Q1Bga4wQHg=");
+        DeviceClient deviceClient = DeviceClient.CreateFromConnectionString("Connection string");
 
         #region Expand to view global variables
         BackgroundTaskDeferral deferral;
@@ -33,23 +33,19 @@ namespace MakerDenFEZHAT
             iotHubCommand = new IoTHubCommand<string>(deviceClient, telemetry);
             iotHubCommand.CommandReceived += Commanding_CommandReceived;
             #endregion
-            
+
 
             #region Code snippets to go between the #region and #endregion tags
 
             while (true)
             {
-                var level = hat.GetLightLevel() * 100;
+                hat.D2.Color = FEZHAT.Color.Red;
+                await Task.Delay(500);
 
-                if (level > LIGHT_THRESHOLD)
-                {
-                    hat.D2.Color = FEZHAT.Color.Green;
-                }
-                else
-                {
-                    hat.D2.Color = FEZHAT.Color.Red;
-                }
+                hat.D2.Color = FEZHAT.Color.Green;
+                await Task.Delay(500);
 
+                hat.D2.Color = FEZHAT.Color.Blue;
                 await Task.Delay(500);
             }
 
