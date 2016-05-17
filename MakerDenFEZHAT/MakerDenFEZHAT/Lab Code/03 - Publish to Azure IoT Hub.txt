@@ -3,7 +3,7 @@
     hat.D3.Color = publishColor;      // turn on publish indicator LED
 
     var temperature = hat.GetTemperature(); // read temperature from the FEZ HAT
-    var light = hat.GetLightLevel();        // read light level from the FEZ HAT
+    var light = hat.GetLightLevel() * 100;        // read light level from the FEZ HAT
     var json = telemetry.ToJson(temperature, light, 0, 0);  //serialise to JSON
 
     var content = new Message(json);

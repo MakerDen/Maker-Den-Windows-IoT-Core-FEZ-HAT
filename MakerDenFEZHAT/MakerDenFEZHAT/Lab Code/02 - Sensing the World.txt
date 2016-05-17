@@ -4,7 +4,7 @@
 
     if (level > LIGHT_THRESHOLD)
     {
-        hat.D2.Color = FEZHAT.Color.Green;
+        hat.D2.Color = FEZHAT.Color.Blue;
     }
     else
     {
