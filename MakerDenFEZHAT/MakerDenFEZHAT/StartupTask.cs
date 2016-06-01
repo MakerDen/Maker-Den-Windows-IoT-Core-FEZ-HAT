@@ -65,7 +65,7 @@ namespace MakerDenFEZHAT
         {
             #region IoT Hub Command Support
 
-
+            
 
             #endregion
         }
