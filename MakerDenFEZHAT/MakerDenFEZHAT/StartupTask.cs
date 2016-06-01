@@ -12,7 +12,7 @@ namespace MakerDenFEZHAT
 {
     public sealed class StartupTask : IBackgroundTask
     {
-        DeviceClient deviceClient = DeviceClient.CreateFromConnectionString("Connection string");
+        DeviceClient deviceClient = DeviceClient.CreateFromConnectionString("Connection String");
 
         #region Expand to view global variables
         BackgroundTaskDeferral deferral;
@@ -56,19 +56,7 @@ namespace MakerDenFEZHAT
         {
             #region Publish to Azure IoTHub
 
-            try  // Exception handling if problem streaming telemetry to Azure IoT Hub
-            {
-                hat.D3.Color = publishColor;      // turn on publish indicator LED
 
-                var temperature = hat.GetTemperature(); // read temperature from the FEZ HAT
-                var light = hat.GetLightLevel() * 100;        // read light level from the FEZ HAT
-                var json = telemetry.ToJson(temperature, light, 0, 0);  //serialise to JSON
-
-                var content = new Message(json);
-                await deviceClient.SendEventAsync(content); //Send telemetry data to IoT Hub
-            }
-            catch { telemetry.Exceptions++; }
-            finally { hat.D3.TurnOff(); }
 
             #endregion
         }
@@ -77,31 +65,7 @@ namespace MakerDenFEZHAT
         {
             #region IoT Hub Command Support
 
-            char cmd = e.Item.Length > 0 ? e.Item.ToUpper()[0] : ' ';  // get command character sent from IoT Hub
 
-            switch (cmd)
-            {
-                case 'R':
-                    publishColor = FEZHAT.Color.Red;
-                    break;
-                case 'G':
-                    publishColor = FEZHAT.Color.Green;
-                    break;
-                case 'B':
-                    publishColor = FEZHAT.Color.Blue;
-                    break;
-                case 'Y':
-                    publishColor = FEZHAT.Color.Yellow;
-                    break;
-                case 'M':
-                    publishColor = FEZHAT.Color.Magneta;
-                    break;
-                default:
-                    System.Diagnostics.Debug.WriteLine("Unrecognized command: {0}", e.Item);
-                    break;
-            }
-
-            hat.D3.Color = publishColor;
 
             #endregion
         }
