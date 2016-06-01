@@ -3,6 +3,19 @@
   "version": 2,
   "targets": {
     "UAP,Version=v10.0": {
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Net.Http": "2.2.22",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "compile": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        }
+      },
       "Microsoft.Azure.Amqp/1.1.1": {
         "type": "package",
         "compile": {
@@ -12,9 +25,10 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.7": {
+      "Microsoft.Azure.Devices.Client/1.0.11": {
         "type": "package",
         "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3",
           "Microsoft.Azure.Amqp": "1.1.1",
           "PCLCrypto": "1.0.86"
         },
@@ -24,6 +38,21 @@
         "runtime": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
         }
+      },
+      "Microsoft.Bcl/1.1.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/_._": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {
+        "type": "package"
       },
       "Microsoft.CSharp/4.0.0": {
         "type": "package",
@@ -50,6 +79,21 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.22": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.0": {
@@ -1932,6 +1976,19 @@
       }
     },
     "UAP,Version=v10.0/win10-arm": {
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Net.Http": "2.2.22",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "compile": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        }
+      },
       "Microsoft.Azure.Amqp/1.1.1": {
         "type": "package",
         "compile": {
@@ -1941,9 +1998,10 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.7": {
+      "Microsoft.Azure.Devices.Client/1.0.11": {
         "type": "package",
         "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3",
           "Microsoft.Azure.Amqp": "1.1.1",
           "PCLCrypto": "1.0.86"
         },
@@ -1953,6 +2011,21 @@
         "runtime": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
         }
+      },
+      "Microsoft.Bcl/1.1.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/_._": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {
+        "type": "package"
       },
       "Microsoft.CSharp/4.0.0": {
         "type": "package",
@@ -1979,6 +2052,21 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.22": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.0": {
@@ -3727,6 +3815,19 @@
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Net.Http": "2.2.22",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "compile": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        }
+      },
       "Microsoft.Azure.Amqp/1.1.1": {
         "type": "package",
         "compile": {
@@ -3736,9 +3837,10 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.7": {
+      "Microsoft.Azure.Devices.Client/1.0.11": {
         "type": "package",
         "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3",
           "Microsoft.Azure.Amqp": "1.1.1",
           "PCLCrypto": "1.0.86"
         },
@@ -3748,6 +3850,21 @@
         "runtime": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
         }
+      },
+      "Microsoft.Bcl/1.1.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/_._": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {
+        "type": "package"
       },
       "Microsoft.CSharp/4.0.0": {
         "type": "package",
@@ -3774,6 +3891,21 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.22": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.0": {
@@ -5479,6 +5611,19 @@
       }
     },
     "UAP,Version=v10.0/win10-x64": {
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Net.Http": "2.2.22",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "compile": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        }
+      },
       "Microsoft.Azure.Amqp/1.1.1": {
         "type": "package",
         "compile": {
@@ -5488,9 +5633,10 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.7": {
+      "Microsoft.Azure.Devices.Client/1.0.11": {
         "type": "package",
         "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3",
           "Microsoft.Azure.Amqp": "1.1.1",
           "PCLCrypto": "1.0.86"
         },
@@ -5500,6 +5646,21 @@
         "runtime": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
         }
+      },
+      "Microsoft.Bcl/1.1.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/_._": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {
+        "type": "package"
       },
       "Microsoft.CSharp/4.0.0": {
         "type": "package",
@@ -5526,6 +5687,21 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.22": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.0": {
@@ -7283,6 +7459,19 @@
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Net.Http": "2.2.22",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "compile": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        }
+      },
       "Microsoft.Azure.Amqp/1.1.1": {
         "type": "package",
         "compile": {
@@ -7292,9 +7481,10 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.7": {
+      "Microsoft.Azure.Devices.Client/1.0.11": {
         "type": "package",
         "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3",
           "Microsoft.Azure.Amqp": "1.1.1",
           "PCLCrypto": "1.0.86"
         },
@@ -7304,6 +7494,21 @@
         "runtime": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
         }
+      },
+      "Microsoft.Bcl/1.1.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/_._": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {
+        "type": "package"
       },
       "Microsoft.CSharp/4.0.0": {
         "type": "package",
@@ -7330,6 +7535,21 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.22": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.0": {
@@ -9035,6 +9255,19 @@
       }
     },
     "UAP,Version=v10.0/win10-x86": {
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Net.Http": "2.2.22",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "compile": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        }
+      },
       "Microsoft.Azure.Amqp/1.1.1": {
         "type": "package",
         "compile": {
@@ -9044,9 +9277,10 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.7": {
+      "Microsoft.Azure.Devices.Client/1.0.11": {
         "type": "package",
         "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3",
           "Microsoft.Azure.Amqp": "1.1.1",
           "PCLCrypto": "1.0.86"
         },
@@ -9056,6 +9290,21 @@
         "runtime": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
         }
+      },
+      "Microsoft.Bcl/1.1.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/_._": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {
+        "type": "package"
       },
       "Microsoft.CSharp/4.0.0": {
         "type": "package",
@@ -9082,6 +9331,21 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.22": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.0": {
@@ -10839,6 +11103,19 @@
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Net.Http": "2.2.22",
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "compile": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
+        }
+      },
       "Microsoft.Azure.Amqp/1.1.1": {
         "type": "package",
         "compile": {
@@ -10848,9 +11125,10 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.7": {
+      "Microsoft.Azure.Devices.Client/1.0.11": {
         "type": "package",
         "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3",
           "Microsoft.Azure.Amqp": "1.1.1",
           "PCLCrypto": "1.0.86"
         },
@@ -10860,6 +11138,21 @@
         "runtime": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
         }
+      },
+      "Microsoft.Bcl/1.1.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/_._": {}
+        },
+        "runtime": {
+          "lib/win8/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {
+        "type": "package"
       },
       "Microsoft.CSharp/4.0.0": {
         "type": "package",
@@ -10886,6 +11179,21 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.22": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/win8/System.Net.Http.Extensions.dll": {},
+          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.0": {
@@ -12592,6 +12900,18 @@
     }
   },
   "libraries": {
+    "Microsoft.AspNet.WebApi.Client/5.2.3": {
+      "sha512": "3kiI8peSXbXHDDrRuo+QaX0iCEVRe0nvn2dBDRw656uPX32UalbBlSIDUDlJxu05eau4tnuhsikiUuugvvoUoQ==",
+      "type": "package",
+      "files": [
+        "Microsoft.AspNet.WebApi.Client.5.2.3.nupkg.sha512",
+        "Microsoft.AspNet.WebApi.Client.nuspec",
+        "lib/net45/System.Net.Http.Formatting.dll",
+        "lib/net45/System.Net.Http.Formatting.xml",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.xml"
+      ]
+    },
     "Microsoft.Azure.Amqp/1.1.1": {
       "sha512": "obddkKSOmr4SLOgJQbjVC3W2OX+JU51aGnvyNJT0GwMLWUWj2fryLKkc9W+LAzSYrK0u0YoRKaDDHmmTBMs04A==",
       "type": "package",
@@ -12603,17 +12923,136 @@
         "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll"
       ]
     },
-    "Microsoft.Azure.Devices.Client/1.0.7": {
-      "sha512": "q+ffG08qBiTC2TZ0GGQe8UtFC4+sAUI1g2aPIKPp3Q8ID36siDCZ+7O4LnKXtubw9o/4Dvd8V5DnOGXb6GMcHA==",
+    "Microsoft.Azure.Devices.Client/1.0.11": {
+      "sha512": "NvfYR7BVpqJfc9YNSATg0VjyQgLNwYEWglJxwe4ooTX7V9k0S1QBjXTTt2US7TpgfY0lUAQZo77p9fnYO3CgcA==",
       "type": "package",
       "files": [
-        "Microsoft.Azure.Devices.Client.1.0.7.nupkg.sha512",
+        "Microsoft.Azure.Devices.Client.1.0.11.nupkg.sha512",
         "Microsoft.Azure.Devices.Client.nuspec",
         "build/native/Microsoft.Azure.Devices.Client.targets",
         "lib/native/Microsoft.Azure.Devices.Client.winmd",
         "lib/net45/Microsoft.Azure.Devices.Client.dll",
         "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd",
         "thirdpartynotice.txt"
+      ]
+    },
+    "Microsoft.Bcl/1.1.9": {
+      "sha512": "USQ55innJy8K+tAXvVa1O8dUTp2s7pmJ5cJj6Tl02HtGc2xBDj0P2QH5620HbGXIWKWYhydoeQF8Rm/JRDBGhw==",
+      "type": "package",
+      "files": [
+        "License-Stable.rtf",
+        "Microsoft.Bcl.1.1.9.nupkg.sha512",
+        "Microsoft.Bcl.nuspec",
+        "content/monoandroid/_._",
+        "content/monotouch/_._",
+        "content/net45/_._",
+        "content/portable-net45+win8+wp8+wpa81/_._",
+        "content/portable-net45+win8+wpa81/_._",
+        "content/portable-net451+win81+wpa81/_._",
+        "content/portable-net451+win81/_._",
+        "content/portable-win81+wp81+wpa81/_._",
+        "content/sl4/_._",
+        "content/sl5/_._",
+        "content/win8/_._",
+        "content/wp8/_._",
+        "content/wpa81/_._",
+        "lib/monoandroid/_._",
+        "lib/monotouch/_._",
+        "lib/net40/System.IO.dll",
+        "lib/net40/System.IO.xml",
+        "lib/net40/System.Runtime.dll",
+        "lib/net40/System.Runtime.xml",
+        "lib/net40/System.Threading.Tasks.dll",
+        "lib/net40/System.Threading.Tasks.xml",
+        "lib/net40/ensureRedirect.xml",
+        "lib/net45/_._",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8/System.IO.dll",
+        "lib/portable-net40+sl4+win8/System.IO.xml",
+        "lib/portable-net40+sl4+win8/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8/ensureRedirect.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+win8/System.IO.dll",
+        "lib/portable-net40+win8/System.IO.xml",
+        "lib/portable-net40+win8/System.Runtime.dll",
+        "lib/portable-net40+win8/System.Runtime.xml",
+        "lib/portable-net40+win8/System.Threading.Tasks.dll",
+        "lib/portable-net40+win8/System.Threading.Tasks.xml",
+        "lib/portable-net40+win8/ensureRedirect.xml",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/portable-net45+win8+wpa81/_._",
+        "lib/portable-net451+win81+wpa81/_._",
+        "lib/portable-net451+win81/_._",
+        "lib/portable-win81+wp81+wpa81/_._",
+        "lib/sl4-windowsphone71/System.IO.dll",
+        "lib/sl4-windowsphone71/System.IO.xml",
+        "lib/sl4-windowsphone71/System.Runtime.dll",
+        "lib/sl4-windowsphone71/System.Runtime.xml",
+        "lib/sl4-windowsphone71/System.Threading.Tasks.dll",
+        "lib/sl4-windowsphone71/System.Threading.Tasks.xml",
+        "lib/sl4-windowsphone71/ensureRedirect.xml",
+        "lib/sl4/System.IO.dll",
+        "lib/sl4/System.IO.xml",
+        "lib/sl4/System.Runtime.dll",
+        "lib/sl4/System.Runtime.xml",
+        "lib/sl4/System.Threading.Tasks.dll",
+        "lib/sl4/System.Threading.Tasks.xml",
+        "lib/sl5/System.IO.dll",
+        "lib/sl5/System.IO.xml",
+        "lib/sl5/System.Runtime.dll",
+        "lib/sl5/System.Runtime.xml",
+        "lib/sl5/System.Threading.Tasks.dll",
+        "lib/sl5/System.Threading.Tasks.xml",
+        "lib/win8/_._",
+        "lib/wp8/_._",
+        "lib/wpa81/_._"
+      ]
+    },
+    "Microsoft.Bcl.Build/1.0.14": {
+      "sha512": "cDLKSvNvRa519hplsbSoYqO69TjdDIhfjtKUM0g20/nVROoWsGav9KCI9HtnGjLmdV1+TcUUDhbotcllibjPEA==",
+      "type": "package",
+      "files": [
+        "License-Stable.rtf",
+        "Microsoft.Bcl.Build.1.0.14.nupkg.sha512",
+        "Microsoft.Bcl.Build.nuspec",
+        "content/net40/_._",
+        "content/netcore45/_._",
+        "content/portable-net40+win8+sl4+wp71+wpa81/_._",
+        "content/sl4-windowsphone71/_._",
+        "content/sl4/_._",
+        "tools/Install.ps1",
+        "tools/Microsoft.Bcl.Build.Tasks.dll",
+        "tools/Microsoft.Bcl.Build.targets",
+        "tools/Uninstall.ps1"
       ]
     },
     "Microsoft.CSharp/4.0.0": {
@@ -12653,6 +13092,68 @@
         "ref/wpa81/_._",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._"
+      ]
+    },
+    "Microsoft.Net.Http/2.2.22": {
+      "sha512": "bqVLJ2UimlAEs2bn3y28lB1pmFRxuysv9pFyB0A86WEMYGYTfDyfjAGjm0fiaSRjlMNU1jVnp8Mxt8qe4OmpXQ==",
+      "type": "package",
+      "files": [
+        "License-Stable.rtf",
+        "Microsoft.Net.Http.2.2.22.nupkg.sha512",
+        "Microsoft.Net.Http.nuspec",
+        "lib/monoandroid/System.Net.Http.Extensions.XML",
+        "lib/monoandroid/System.Net.Http.Extensions.dll",
+        "lib/monoandroid/System.Net.Http.Primitives.dll",
+        "lib/monoandroid/System.Net.Http.Primitives.xml",
+        "lib/monotouch/System.Net.Http.Extensions.XML",
+        "lib/monotouch/System.Net.Http.Extensions.dll",
+        "lib/monotouch/System.Net.Http.Primitives.dll",
+        "lib/monotouch/System.Net.Http.Primitives.xml",
+        "lib/net40/System.Net.Http.Extensions.XML",
+        "lib/net40/System.Net.Http.Extensions.dll",
+        "lib/net40/System.Net.Http.Primitives.dll",
+        "lib/net40/System.Net.Http.Primitives.xml",
+        "lib/net40/System.Net.Http.WebRequest.dll",
+        "lib/net40/System.Net.Http.WebRequest.xml",
+        "lib/net40/System.Net.Http.dll",
+        "lib/net40/System.Net.Http.xml",
+        "lib/net40/ensureRedirect.xml",
+        "lib/net45/System.Net.Http.Extensions.XML",
+        "lib/net45/System.Net.Http.Extensions.dll",
+        "lib/net45/System.Net.Http.Primitives.dll",
+        "lib/net45/System.Net.Http.Primitives.xml",
+        "lib/net45/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Extensions.XML",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Extensions.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Primitives.XML",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Primitives.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/ensureRedirect.xml",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Extensions.XML",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Extensions.dll",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Primitives.dll",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Primitives.xml",
+        "lib/portable-net45+win8+wpa81/ensureRedirect.xml",
+        "lib/portable-net45+win8/System.Net.Http.Extensions.XML",
+        "lib/portable-net45+win8/System.Net.Http.Extensions.dll",
+        "lib/portable-net45+win8/System.Net.Http.Primitives.dll",
+        "lib/portable-net45+win8/System.Net.Http.Primitives.xml",
+        "lib/portable-net45+win8/ensureRedirect.xml",
+        "lib/sl4-windowsphone71/System.Net.Http.Extensions.XML",
+        "lib/sl4-windowsphone71/System.Net.Http.Extensions.dll",
+        "lib/sl4-windowsphone71/System.Net.Http.Primitives.XML",
+        "lib/sl4-windowsphone71/System.Net.Http.Primitives.dll",
+        "lib/sl4-windowsphone71/System.Net.Http.dll",
+        "lib/sl4-windowsphone71/System.Net.Http.xml",
+        "lib/win8/System.Net.Http.Extensions.XML",
+        "lib/win8/System.Net.Http.Extensions.dll",
+        "lib/win8/System.Net.Http.Primitives.dll",
+        "lib/win8/System.Net.Http.Primitives.xml",
+        "lib/wpa81/System.Net.Http.Extensions.XML",
+        "lib/wpa81/System.Net.Http.Extensions.dll",
+        "lib/wpa81/System.Net.Http.Primitives.dll",
+        "lib/wpa81/System.Net.Http.Primitives.xml"
       ]
     },
     "Microsoft.NETCore/5.0.0": {
@@ -15944,7 +16445,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Microsoft.Azure.Devices.Client >= 1.0.7",
+      "Microsoft.Azure.Devices.Client >= 1.0.11",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
       "Newtonsoft.Json >= 8.0.3"
     ],
