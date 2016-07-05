@@ -1,6 +1,4 @@
-﻿if (deviceClient == null) { return; }
-
-try  // Exception handling if problem streaming telemetry to Azure IoT Hub
+﻿try  // Exception handling if problem streaming telemetry to Azure IoT Hub
 {
     hat.D3.Color = publishColor;      // turn on publish indicator LED
 

@@ -22,14 +22,6 @@ namespace MakerDenFEZHAT
         Telemetry telemetry;
         FEZHAT.Color publishColor = FEZHAT.Color.Green;
         FEZHAT hat;
-
-        public static string ConnectionString1
-        {
-            get
-            {
-                return ConnectionString;
-            }
-        }
         #endregion
 
         public async void Run(IBackgroundTaskInstance taskInstance)
@@ -38,7 +30,7 @@ namespace MakerDenFEZHAT
             deferral = taskInstance.GetDeferral();
             hat = await FEZHAT.CreateAsync();
             deviceClient = ConnectionString.StartsWith("Connection") ? null : DeviceClient.CreateFromConnectionString(ConnectionString);
-            telemetry = new Telemetry("Sydney", Publish, 5);
+            telemetry = new Telemetry("Sydney", Publish, 10);
             Command_Processing();
             #endregion
 
@@ -61,7 +53,7 @@ namespace MakerDenFEZHAT
 
         async void Publish()
         {
-            #region Lab 6 - Publish to Azure IoTHub
+            #region Lab 6 - Publish to Azure IoT Hub
 
             #endregion
         }
@@ -69,7 +61,7 @@ namespace MakerDenFEZHAT
         private async void Command_Processing()
         {
             #region Lab 7 - IoT Hub Command Support
-           
+
             #endregion
         }
     }
