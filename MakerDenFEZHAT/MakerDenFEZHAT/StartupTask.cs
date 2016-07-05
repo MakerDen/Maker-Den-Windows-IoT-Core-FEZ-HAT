@@ -5,6 +5,7 @@ using IotServices;
 using Microsoft.Azure.Devices.Client;
 using System;
 using System.Diagnostics;
+using System.Text;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.Background;
 
@@ -12,16 +13,23 @@ namespace MakerDenFEZHAT
 {
     public sealed class StartupTask : IBackgroundTask
     {
-        DeviceClient deviceClient = DeviceClient.CreateFromConnectionString("Connection String");
+        const string ConnectionString = "Connection String";
+        const double Light_Threshold = 85d;
 
         #region Expand to view global variables
         BackgroundTaskDeferral deferral;
-        IoTHubCommand<String> iotHubCommand;
+        DeviceClient deviceClient;
         Telemetry telemetry;
         FEZHAT.Color publishColor = FEZHAT.Color.Green;
         FEZHAT hat;
 
-        const double LIGHT_THRESHOLD = 85d;
+        public static string ConnectionString1
+        {
+            get
+            {
+                return ConnectionString;
+            }
+        }
         #endregion
 
         public async void Run(IBackgroundTaskInstance taskInstance)
@@ -29,13 +37,12 @@ namespace MakerDenFEZHAT
             #region Expand to view variable initialisation
             deferral = taskInstance.GetDeferral();
             hat = await FEZHAT.CreateAsync();
-            telemetry = new Telemetry("Sydney", Publish);
-            iotHubCommand = new IoTHubCommand<string>(deviceClient, telemetry);
-            iotHubCommand.CommandReceived += Commanding_CommandReceived;
+            deviceClient = ConnectionString.StartsWith("Connection") ? null : DeviceClient.CreateFromConnectionString(ConnectionString);
+            telemetry = new Telemetry("Sydney", Publish, 5);
+            Command_Processing();
             #endregion
 
-
-            #region Code snippets to go between the #region and #endregion tags
+            #region Code snippets for labs 1 & 2 go between the #region and #endregion tags
 
             while (true)
             {
@@ -54,19 +61,15 @@ namespace MakerDenFEZHAT
 
         async void Publish()
         {
-            #region Publish to Azure IoTHub
-
-
+            #region Lab 6 - Publish to Azure IoTHub
 
             #endregion
         }
 
-        private void Commanding_CommandReceived(object sender, CommandEventArgs<string> e)
+        private async void Command_Processing()
         {
-            #region IoT Hub Command Support
-
-            
-
+            #region Lab 7 - IoT Hub Command Support
+           
             #endregion
         }
     }

@@ -16,7 +16,7 @@
           "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
         }
       },
-      "Microsoft.Azure.Amqp/1.1.1": {
+      "Microsoft.Azure.Amqp/1.1.5": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
@@ -25,11 +25,11 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.11": {
+      "Microsoft.Azure.Devices.Client/1.0.13": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNet.WebApi.Client": "5.2.3",
-          "Microsoft.Azure.Amqp": "1.1.1",
+          "Microsoft.Azure.Amqp": "1.1.5",
           "PCLCrypto": "1.0.86"
         },
         "compile": {
@@ -344,13 +344,13 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Newtonsoft.Json/8.0.3": {
+      "Newtonsoft.Json/9.0.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "PCLCrypto/1.0.86": {
@@ -1989,7 +1989,7 @@
           "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
         }
       },
-      "Microsoft.Azure.Amqp/1.1.1": {
+      "Microsoft.Azure.Amqp/1.1.5": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
@@ -1998,11 +1998,11 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.11": {
+      "Microsoft.Azure.Devices.Client/1.0.13": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNet.WebApi.Client": "5.2.3",
-          "Microsoft.Azure.Amqp": "1.1.1",
+          "Microsoft.Azure.Amqp": "1.1.5",
           "PCLCrypto": "1.0.86"
         },
         "compile": {
@@ -2266,13 +2266,13 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Newtonsoft.Json/8.0.3": {
+      "Newtonsoft.Json/9.0.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "PCLCrypto/1.0.86": {
@@ -3828,7 +3828,7 @@
           "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
         }
       },
-      "Microsoft.Azure.Amqp/1.1.1": {
+      "Microsoft.Azure.Amqp/1.1.5": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
@@ -3837,11 +3837,11 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.11": {
+      "Microsoft.Azure.Devices.Client/1.0.13": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNet.WebApi.Client": "5.2.3",
-          "Microsoft.Azure.Amqp": "1.1.1",
+          "Microsoft.Azure.Amqp": "1.1.5",
           "PCLCrypto": "1.0.86"
         },
         "compile": {
@@ -4103,13 +4103,13 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Newtonsoft.Json/8.0.3": {
+      "Newtonsoft.Json/9.0.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "PCLCrypto/1.0.86": {
@@ -5624,7 +5624,7 @@
           "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
         }
       },
-      "Microsoft.Azure.Amqp/1.1.1": {
+      "Microsoft.Azure.Amqp/1.1.5": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
@@ -5633,11 +5633,11 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.11": {
+      "Microsoft.Azure.Devices.Client/1.0.13": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNet.WebApi.Client": "5.2.3",
-          "Microsoft.Azure.Amqp": "1.1.1",
+          "Microsoft.Azure.Amqp": "1.1.5",
           "PCLCrypto": "1.0.86"
         },
         "compile": {
@@ -5907,13 +5907,13 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Newtonsoft.Json/8.0.3": {
+      "Newtonsoft.Json/9.0.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "PCLCrypto/1.0.86": {
@@ -7472,7 +7472,7 @@
           "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
         }
       },
-      "Microsoft.Azure.Amqp/1.1.1": {
+      "Microsoft.Azure.Amqp/1.1.5": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
@@ -7481,11 +7481,11 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.11": {
+      "Microsoft.Azure.Devices.Client/1.0.13": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNet.WebApi.Client": "5.2.3",
-          "Microsoft.Azure.Amqp": "1.1.1",
+          "Microsoft.Azure.Amqp": "1.1.5",
           "PCLCrypto": "1.0.86"
         },
         "compile": {
@@ -7747,13 +7747,13 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Newtonsoft.Json/8.0.3": {
+      "Newtonsoft.Json/9.0.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "PCLCrypto/1.0.86": {
@@ -9268,7 +9268,7 @@
           "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
         }
       },
-      "Microsoft.Azure.Amqp/1.1.1": {
+      "Microsoft.Azure.Amqp/1.1.5": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
@@ -9277,11 +9277,11 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.11": {
+      "Microsoft.Azure.Devices.Client/1.0.13": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNet.WebApi.Client": "5.2.3",
-          "Microsoft.Azure.Amqp": "1.1.1",
+          "Microsoft.Azure.Amqp": "1.1.5",
           "PCLCrypto": "1.0.86"
         },
         "compile": {
@@ -9551,13 +9551,13 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Newtonsoft.Json/8.0.3": {
+      "Newtonsoft.Json/9.0.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "PCLCrypto/1.0.86": {
@@ -11116,7 +11116,7 @@
           "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll": {}
         }
       },
-      "Microsoft.Azure.Amqp/1.1.1": {
+      "Microsoft.Azure.Amqp/1.1.5": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
@@ -11125,11 +11125,11 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.11": {
+      "Microsoft.Azure.Devices.Client/1.0.13": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNet.WebApi.Client": "5.2.3",
-          "Microsoft.Azure.Amqp": "1.1.1",
+          "Microsoft.Azure.Amqp": "1.1.5",
           "PCLCrypto": "1.0.86"
         },
         "compile": {
@@ -11391,13 +11391,13 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Newtonsoft.Json/8.0.3": {
+      "Newtonsoft.Json/9.0.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
       "PCLCrypto/1.0.86": {
@@ -12912,22 +12912,24 @@
         "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.xml"
       ]
     },
-    "Microsoft.Azure.Amqp/1.1.1": {
-      "sha512": "obddkKSOmr4SLOgJQbjVC3W2OX+JU51aGnvyNJT0GwMLWUWj2fryLKkc9W+LAzSYrK0u0YoRKaDDHmmTBMs04A==",
+    "Microsoft.Azure.Amqp/1.1.5": {
+      "sha512": "6+3lPVW46h3H2NvjGtrHv+C0P3PVH11pZyCePm+w8AuhmX59OY+fvbA9/wll0MRAj81LPpz1i55oIQm41wOv7g==",
       "type": "package",
+      "path": "Microsoft.Azure.Amqp/1.1.5",
       "files": [
-        "Microsoft.Azure.Amqp.1.1.1.nupkg.sha512",
+        "Microsoft.Azure.Amqp.1.1.5.nupkg.sha512",
         "Microsoft.Azure.Amqp.nuspec",
         "lib/net451/Microsoft.Azure.Amqp.XML",
         "lib/net451/Microsoft.Azure.Amqp.dll",
         "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll"
       ]
     },
-    "Microsoft.Azure.Devices.Client/1.0.11": {
-      "sha512": "NvfYR7BVpqJfc9YNSATg0VjyQgLNwYEWglJxwe4ooTX7V9k0S1QBjXTTt2US7TpgfY0lUAQZo77p9fnYO3CgcA==",
+    "Microsoft.Azure.Devices.Client/1.0.13": {
+      "sha512": "jlI5C5UTr5Yo4ggVwQi1FE76hFIDWhVAysfQaTzOX9nwOM+b9kevWvMtAuiIfxOxmEMLbRQvz4yUWEEGI9IiYg==",
       "type": "package",
+      "path": "Microsoft.Azure.Devices.Client/1.0.13",
       "files": [
-        "Microsoft.Azure.Devices.Client.1.0.11.nupkg.sha512",
+        "Microsoft.Azure.Devices.Client.1.0.13.nupkg.sha512",
         "Microsoft.Azure.Devices.Client.nuspec",
         "build/native/Microsoft.Azure.Devices.Client.targets",
         "lib/native/Microsoft.Azure.Devices.Client.winmd",
@@ -13701,11 +13703,12 @@
         "ref/xamarinmac20/_._"
       ]
     },
-    "Newtonsoft.Json/8.0.3": {
-      "sha512": "KGsYQdS2zLH+H8x2cZaSI7e+YZ4SFIbyy1YJQYl6GYBWjf5o4H1A68nxyq+WTyVSOJQ4GqS/DiPE+UseUizgMg==",
+    "Newtonsoft.Json/9.0.1": {
+      "sha512": "U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
       "type": "package",
+      "path": "Newtonsoft.Json/9.0.1",
       "files": [
-        "Newtonsoft.Json.8.0.3.nupkg.sha512",
+        "Newtonsoft.Json.9.0.1.nupkg.sha512",
         "Newtonsoft.Json.nuspec",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
@@ -13715,10 +13718,12 @@
         "lib/net40/Newtonsoft.Json.xml",
         "lib/net45/Newtonsoft.Json.dll",
         "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
         "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll",
-        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
         "tools/install.ps1"
       ]
     },
@@ -16445,10 +16450,12 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Microsoft.Azure.Devices.Client >= 1.0.11",
+      "Microsoft.Azure.Devices.Client >= 1.0.13",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
-      "Newtonsoft.Json >= 8.0.3"
+      "Newtonsoft.Json >= 9.0.1"
     ],
     "UAP,Version=v10.0": []
-  }
+  },
+  "tools": {},
+  "projectFileToolGroups": {}
 }

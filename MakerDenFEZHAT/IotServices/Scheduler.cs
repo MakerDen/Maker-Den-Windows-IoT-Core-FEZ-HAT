@@ -1,4 +1,5 @@
 ﻿using System.Threading;
+using System.Threading.Tasks;
 
 namespace IotServices
 {
@@ -22,7 +23,7 @@ namespace IotServices
             if (measureMethod == null) { return; }
 
             this.measureMethod = measureMethod;
-            this.sampleRateInSeconds = sampleRateInSeconds;  
+            this.sampleRateInSeconds = sampleRateInSeconds;
 
             timer = new Timer(ActionTimer, null, 0, SampleRateInSeconds * 1000);
         }

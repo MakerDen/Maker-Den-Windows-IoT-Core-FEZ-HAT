@@ -2,7 +2,7 @@
 {
     var level = hat.GetLightLevel() * 100;
 
-    if (level > LIGHT_THRESHOLD)
+    if (level > Light_Threshold)
     {
         hat.D2.Color = FEZHAT.Color.Blue;
     }

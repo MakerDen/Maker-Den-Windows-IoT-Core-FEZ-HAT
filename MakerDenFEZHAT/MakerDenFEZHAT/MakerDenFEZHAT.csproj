@@ -106,10 +106,10 @@
     <None Include="MakerDenFEZHAT_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Lab Code\00 - Welcome Experiments.txt" />
-    <Content Include="Lab Code\03 - Sensing the World.txt" />
+    <Content Include="Lab Code\01 - Welcome Experiments.txt" />
+    <Content Include="Lab Code\02 - Sensing the World.txt" />
     <Content Include="Lab Code\06 - Publish to Azure IoT Hub.txt" />
-    <Content Include="Lab Code\08 - Azure IoT Hub Command Processing.txt" />
+    <Content Include="Lab Code\07 - Azure IoT Hub Command Processing.txt" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png">
       <InProject>false</InProject>
