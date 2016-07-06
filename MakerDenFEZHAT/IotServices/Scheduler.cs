@@ -11,7 +11,8 @@ namespace IotServices
         MeasureMethod measureMethod;
         int sampleRateInSeconds = 10;  // defaults to sample every 10 seconds
 
-        public int SampleRateInSeconds {
+
+        private int SampleRateInSeconds {
             get { return sampleRateInSeconds; }
             set {
                 sampleRateInSeconds = value > 0 ? value : sampleRateInSeconds;

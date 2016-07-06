@@ -12,7 +12,7 @@
         await deviceClient.CompleteAsync(receivedMessage);
 
         string command = Encoding.ASCII.GetString(receivedMessage.GetBytes()).ToUpper();
-        if (string.IsNullOrEmpty(command)) { continue; }
+        if (string.IsNullOrEmpty(command) || telemetry.SetSampleRateInSeconds(command)) { continue; }
 
         switch (command[0])
         {
