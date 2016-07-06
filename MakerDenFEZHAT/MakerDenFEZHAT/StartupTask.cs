@@ -34,7 +34,7 @@ namespace MakerDenFEZHAT
             Command_Processing();
             #endregion
 
-            #region Code snippets for labs 1 & 2 go between the #region and #endregion tags
+            #region Code snippets lab1 and lab2 to go between the #region and #endregion tags
 
             while (true)
             {
@@ -53,14 +53,14 @@ namespace MakerDenFEZHAT
 
         async void Publish()
         {
-            #region Lab 6 - Publish to Azure IoT Hub
+            #region Snippet lab6 - Publish to Azure IoT Hub
 
             #endregion
         }
 
         private async void Command_Processing()
         {
-            #region Lab 7 - IoT Hub Command Support
+            #region Snippet lab7 - IoT Hub Command Support
 
             #endregion
         }
