@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.Background;
 
+
 namespace MakerDenFEZHAT
 {
     public sealed class StartupTask : IBackgroundTask

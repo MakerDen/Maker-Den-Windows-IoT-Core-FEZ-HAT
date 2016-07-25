@@ -107,6 +107,9 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DmxLight.cs" />
+    <Compile Include="Fixtures\GenericRGBW.cs" />
+    <Compile Include="Fixtures\IFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scheduler.cs" />
     <Compile Include="Telemetry.cs" />

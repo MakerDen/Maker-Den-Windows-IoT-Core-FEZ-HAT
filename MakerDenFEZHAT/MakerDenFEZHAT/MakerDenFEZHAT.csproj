@@ -108,6 +108,7 @@
   <ItemGroup>
     <Content Include="Lab Code\02 - Welcome Experiments.txt" />
     <Content Include="Lab Code\03 - Sensing the ambient light levels.txt" />
+    <Content Include="Lab Code\04 - Accelerometer and DMX Lighting.txt" />
     <Content Include="Lab Code\06 - Publish to Azure IoT Hub.txt" />
     <Content Include="Lab Code\09 - Azure IoT Hub Command Processing.txt" />
     <Content Include="Properties\Default.rd.xml" />
