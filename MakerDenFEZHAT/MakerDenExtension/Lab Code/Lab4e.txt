@@ -1,6 +1,4 @@
-﻿#region Lab4c Code to go between the #region and #endregion tags
-
-Temperature.Text = $"The temperature is {hat.GetTemperature().ToString("n2")}";
+﻿Temperature.Text = $"The temperature is {hat.GetTemperature().ToString("n2")}";
 Light.Text = $"The light level is {hat.GetLightLevel().ToString("n4")}";
 
 if (hat.IsDIO18Pressed())
@@ -17,14 +15,19 @@ computedColour.A = (byte)(255 * hat.GetLightLevel());  // change the orb brightn
 
 #region Lab4d Code to go between the #region and #endregion tags
 
+hat.GetAcceleration(out x, out y, out z);
+
+computedColour = ComputeColour(x, y, z);
+
+orb.Fill = new SolidColorBrush(computedColour);
+
+ComputeOrbPosition(x, y);
 
 #endregion
-            
+
 
 orb.UpdateLayout(); // update the orb with the new colour and position
 
 hat.D2.Color = hat.D3.Color = new FEZHAT.Color(computedColour.R, computedColour.G, computedColour.B); // set both Fez Hat RGB LEDs
 
-dmxLight.Update(computedColour); // set colour on DMX RGB Light    
-
-#endregion
+dmxLight.Update(computedColour); // set colour on DMX RGB Light

@@ -1,0 +1,7 @@
+﻿hat.GetAcceleration(out x, out y, out z);
+
+computedColour = ComputeColour(x, y, z);
+
+orb.Fill = new SolidColorBrush(computedColour);
+
+ComputeOrbPosition(x, y);

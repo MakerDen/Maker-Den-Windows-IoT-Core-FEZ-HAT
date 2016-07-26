@@ -25,11 +25,14 @@ namespace MakerDenExtension
         double screenWidth = Window.Current.Bounds.Width;
         double screenHeight = Window.Current.Bounds.Height;
 
+        Color computedColour = Colors.Yellow;
+        double x, y, z;
+
         DispatcherTimer timer;
 
         #endregion
 
-        DmxLight dmxLight = new DmxLight("mqtt Broker IP Address", new uint[] { 1 });
+        DmxLight dmxLight = new DmxLight("192.168.1.117", new uint[] { 2, 3, 4, 5, 6, 7, 8, 9 });
 
         public MainPage()
         {
@@ -42,12 +45,58 @@ namespace MakerDenExtension
         {
             #region Lab4b Code to go between the #region and #endregion tags
 
+
+            myTransformGroup.Children.Add(myTranslate);
+            orb.RenderTransform = myTransformGroup;
+
+            this.hat = await FEZHAT.CreateAsync();
+
+            timer = new DispatcherTimer();
+            this.timer.Interval = TimeSpan.FromMilliseconds(100);
+            this.timer.Tick += this.UpdateOrb;
+            this.timer.Start();
+
+
             #endregion
         }
 
         private void UpdateOrb(object sender, object e)
         {
             #region Lab4c Code to go between the #region and #endregion tags
+
+            Temperature.Text = $"The temperature is {hat.GetTemperature().ToString("n2")}";
+            Light.Text = $"The light level is {hat.GetLightLevel().ToString("n4")}";
+
+            if (hat.IsDIO18Pressed())
+            {
+                computedColour = Colors.DeepPink;
+            }
+            if (hat.IsDIO22Pressed())
+            {
+                computedColour = Colors.Lime;
+            }
+
+            computedColour.A = (byte)(255 * hat.GetLightLevel());  // uncomment to change the orb brightness
+
+
+            #region Lab4d Code to go between the #region and #endregion tags
+
+            hat.GetAcceleration(out x, out y, out z);
+
+            computedColour = ComputeColour(x, y, z);
+
+            orb.Fill = new SolidColorBrush(computedColour);
+
+            ComputeOrbPosition(x, y);
+
+            #endregion
+
+
+            orb.UpdateLayout(); // update the orb with the new colour and position
+
+            hat.D2.Color = hat.D3.Color = new FEZHAT.Color(computedColour.R, computedColour.G, computedColour.B); // set both Fez Hat RGB LEDs
+
+            dmxLight.Update(computedColour); // set colour on DMX RGB Light    
 
             #endregion
         }
