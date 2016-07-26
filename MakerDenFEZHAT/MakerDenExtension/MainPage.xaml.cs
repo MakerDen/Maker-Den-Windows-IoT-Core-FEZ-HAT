@@ -32,7 +32,7 @@ namespace MakerDenExtension
 
         #endregion
 
-        DmxLight dmxLight = new DmxLight("192.168.1.117", new uint[] { 2, 3, 4, 5, 6, 7, 8, 9 });
+        DmxLight dmxLight = new DmxLight("mqtt broker address", new uint[] { 1 });
 
         public MainPage()
         {
@@ -45,7 +45,6 @@ namespace MakerDenExtension
         {
             #region Lab4b Code to go between the #region and #endregion tags
 
-
             myTransformGroup.Children.Add(myTranslate);
             orb.RenderTransform = myTransformGroup;
 
@@ -56,30 +55,15 @@ namespace MakerDenExtension
             this.timer.Tick += this.UpdateOrb;
             this.timer.Start();
 
-
             #endregion
         }
 
         private void UpdateOrb(object sender, object e)
         {
-            #region Lab4c Code to go between the #region and #endregion tags
+            #region Lab4c and Lab4d Code to go between the #region and #endregion tags
 
             Temperature.Text = $"The temperature is {hat.GetTemperature().ToString("n2")}";
             Light.Text = $"The light level is {hat.GetLightLevel().ToString("n4")}";
-
-            if (hat.IsDIO18Pressed())
-            {
-                computedColour = Colors.DeepPink;
-            }
-            if (hat.IsDIO22Pressed())
-            {
-                computedColour = Colors.Lime;
-            }
-
-            computedColour.A = (byte)(255 * hat.GetLightLevel());  // uncomment to change the orb brightness
-
-
-            #region Lab4d Code to go between the #region and #endregion tags
 
             hat.GetAcceleration(out x, out y, out z);
 
@@ -89,12 +73,9 @@ namespace MakerDenExtension
 
             ComputeOrbPosition(x, y);
 
-            #endregion
-
-
             orb.UpdateLayout(); // update the orb with the new colour and position
 
-            hat.D2.Color = hat.D3.Color = new FEZHAT.Color(computedColour.R, computedColour.G, computedColour.B); // set both Fez Hat RGB LEDs
+            hat.D2.Color = hat.D3.Color = FezColour(computedColour); // set both Fez Hat RGB LEDs
 
             dmxLight.Update(computedColour); // set colour on DMX RGB Light    
 
@@ -110,6 +91,12 @@ namespace MakerDenExtension
 
             myTranslate.X = newX;
             myTranslate.Y = newY;
+
+        }
+
+        FEZHAT.Color FezColour(Color colour)
+        {
+            return new FEZHAT.Color(colour.R, colour.G, colour.B);
         }
 
         Color ComputeColour(double x, double y, double z)
