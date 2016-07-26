@@ -19,7 +19,7 @@ namespace IotServices
         const string MqttTopic = "dmx/data/";
         string MqttBroker;
 
-        const int publishCycleTime = 75;
+        const int publishCycleTime = 250;
         AutoResetEvent publishEvent = new AutoResetEvent(false);
         private bool isConnected => client != null && client.IsConnected;
 

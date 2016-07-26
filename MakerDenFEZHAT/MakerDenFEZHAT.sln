@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakerDenFEZHAT", "MakerDenFEZHAT\MakerDenFEZHAT.csproj", "{33876292-1224-4A81-BF4A-D570AF9B02EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IotServices", "IotServices\IotServices.csproj", "{B150FBAB-ED29-44EE-BDAE-BADC2B0E1A3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakerDenExtension", "MakerDenExtension\MakerDenExtension.csproj", "{8CDC997E-C4B5-40C9-B0C5-F06468277AA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,26 @@ Global
 		{B150FBAB-ED29-44EE-BDAE-BADC2B0E1A3F}.Release|x64.Build.0 = Release|x64
 		{B150FBAB-ED29-44EE-BDAE-BADC2B0E1A3F}.Release|x86.ActiveCfg = Release|x86
 		{B150FBAB-ED29-44EE-BDAE-BADC2B0E1A3F}.Release|x86.Build.0 = Release|x86
+		{8CDC997E-C4B5-40C9-B0C5-F06468277AA5}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{8CDC997E-C4B5-40C9-B0C5-F06468277AA5}.Debug|ARM.ActiveCfg = Debug|ARM
+		{8CDC997E-C4B5-40C9-B0C5-F06468277AA5}.Debug|ARM.Build.0 = Debug|ARM
+		{8CDC997E-C4B5-40C9-B0C5-F06468277AA5}.Debug|ARM.Deploy.0 = Debug|ARM
+		{8CDC997E-C4B5-40C9-B0C5-F06468277AA5}.Debug|x64.ActiveCfg = Debug|x64
+		{8CDC997E-C4B5-40C9-B0C5-F06468277AA5}.Debug|x64.Build.0 = Debug|x64
+		{8CDC997E-C4B5-40C9-B0C5-F06468277AA5}.Debug|x64.Deploy.0 = Debug|x64
+		{8CDC997E-C4B5-40C9-B0C5-F06468277AA5}.Debug|x86.ActiveCfg = Debug|x86
+		{8CDC997E-C4B5-40C9-B0C5-F06468277AA5}.Debug|x86.Build.0 = Debug|x86
+		{8CDC997E-C4B5-40C9-B0C5-F06468277AA5}.Debug|x86.Deploy.0 = Debug|x86
+		{8CDC997E-C4B5-40C9-B0C5-F06468277AA5}.Release|Any CPU.ActiveCfg = Release|x86
+		{8CDC997E-C4B5-40C9-B0C5-F06468277AA5}.Release|ARM.ActiveCfg = Release|ARM
+		{8CDC997E-C4B5-40C9-B0C5-F06468277AA5}.Release|ARM.Build.0 = Release|ARM
+		{8CDC997E-C4B5-40C9-B0C5-F06468277AA5}.Release|ARM.Deploy.0 = Release|ARM
+		{8CDC997E-C4B5-40C9-B0C5-F06468277AA5}.Release|x64.ActiveCfg = Release|x64
+		{8CDC997E-C4B5-40C9-B0C5-F06468277AA5}.Release|x64.Build.0 = Release|x64
+		{8CDC997E-C4B5-40C9-B0C5-F06468277AA5}.Release|x64.Deploy.0 = Release|x64
+		{8CDC997E-C4B5-40C9-B0C5-F06468277AA5}.Release|x86.ActiveCfg = Release|x86
+		{8CDC997E-C4B5-40C9-B0C5-F06468277AA5}.Release|x86.Build.0 = Release|x86
+		{8CDC997E-C4B5-40C9-B0C5-F06468277AA5}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

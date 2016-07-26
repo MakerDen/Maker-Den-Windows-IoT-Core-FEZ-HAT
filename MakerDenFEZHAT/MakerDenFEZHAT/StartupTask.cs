@@ -37,16 +37,16 @@ namespace MakerDenFEZHAT
 
             #region Code snippets lab2 and lab3 to go between the #region and #endregion tags
 
+            DmxLight dmxLight = new DmxLight("192.168.1.117", new uint[] { 2, 3, 4, 5, 6, 7, 8, 9 });
+            double x, y, z = 0;
+
             while (true)
             {
-                hat.D2.Color = FEZHAT.Color.Red;
-                await Task.Delay(500);
+                hat.GetAcceleration(out x, out y, out z);
 
-                hat.D2.Color = FEZHAT.Color.Green;
-                await Task.Delay(500);
+                dmxLight.Update((byte)(Math.Abs(x * 255)), (byte)(Math.Abs(y * 255)), (byte)(Math.Abs(z * 255)));
 
-                hat.D2.Color = FEZHAT.Color.Blue;
-                await Task.Delay(500);
+                await Task.Delay(150);
             }
 
             #endregion

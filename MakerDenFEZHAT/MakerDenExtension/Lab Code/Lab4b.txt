@@ -1,0 +1,9 @@
+﻿myTransformGroup.Children.Add(myTranslate);
+orb.RenderTransform = myTransformGroup;
+
+this.hat = await FEZHAT.CreateAsync();
+
+timer = new DispatcherTimer();
+this.timer.Interval = TimeSpan.FromMilliseconds(100);
+this.timer.Tick += this.UpdateOrb;
+this.timer.Start();
