@@ -1,5 +1,5 @@
-﻿Temperature.Text = $"The temperature is {hat.GetTemperature().ToString("n2")}";
-Light.Text = $"The light level is {hat.GetLightLevel().ToString("n4")}";
+﻿Temperature.Text = string.Format("The temperature is {0:N2}", hat.GetTemperature());
+Light.Text = string.Format("The light level is {0:N4}", hat.GetLightLevel());
 
 if (hat.IsDIO18Pressed())
 {
@@ -10,6 +10,8 @@ if (hat.IsDIO22Pressed())
     computedColour = Colors.Lime;
 }
 
-computedColour.A = (byte)(255 * hat.GetLightLevel());  // change the orb brightness            
+computedColour.A = (byte)(255 * hat.GetLightLevel());  // change the orb brightness           
+
+orb.Fill = new SolidColorBrush(computedColour); 
 
 orb.UpdateLayout(); // update the orb with the new colour and position

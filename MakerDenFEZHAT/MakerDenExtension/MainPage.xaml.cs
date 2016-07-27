@@ -55,7 +55,7 @@ namespace MakerDenExtension
         private void UpdateOrb(object sender, object e)
         {
             #region Lab5b, Lab6 and Lab7 Code to go between the #region and #endregion tags
- 
+
 
             #endregion
         }

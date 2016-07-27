@@ -1,5 +1,5 @@
-﻿Temperature.Text = $"The temperature is {hat.GetTemperature().ToString("n2")}";
-Light.Text = $"The light level is {hat.GetLightLevel().ToString("n4")}";
+﻿Temperature.Text = string.Format("The temperature is {0:N2}", hat.GetTemperature());
+Light.Text = string.Format("The light level is {0:N4}", hat.GetLightLevel());
 
 hat.GetAcceleration(out x, out y, out z);
 
