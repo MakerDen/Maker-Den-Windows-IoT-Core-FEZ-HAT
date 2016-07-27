@@ -7,11 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="BlueViolet">
-        <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Left">
-            <TextBlock x:Name="Temperature" Foreground="White" FontSize="28" Margin="10"></TextBlock>
-            <TextBlock x:Name="Light" Foreground="White" FontSize="28" Margin="10" ></TextBlock>
-        </StackPanel>
-        <Ellipse x:Name="orb" Height="100" Width="100" Fill="Yellow" />
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
     </Grid>
 </Page>

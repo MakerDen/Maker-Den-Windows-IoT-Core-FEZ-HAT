@@ -1,0 +1,12 @@
+﻿Temperature.Text = $"The temperature is {hat.GetTemperature().ToString("n2")}";
+Light.Text = $"The light level is {hat.GetLightLevel().ToString("n4")}";
+
+hat.GetAcceleration(out x, out y, out z);
+
+computedColour = ComputeColour(x, y, z);
+
+orb.Fill = new SolidColorBrush(computedColour);
+
+ComputeOrbPosition(x, y);
+
+orb.UpdateLayout(); // update the orb with the new colour and position

@@ -30,9 +30,12 @@ namespace MakerDenExtension
 
         DispatcherTimer timer;
 
+        DmxLight dmxLight = new DmxLight(MqttBrokerAddress, new uint[] { FixtureId });
+
         #endregion
 
-        DmxLight dmxLight = new DmxLight("mqtt broker address", new uint[] { 1 });
+        const string MqttBrokerAddress = "MQTT Broker Address";
+        const uint FixtureId = 1;
 
         public MainPage()
         {
@@ -43,41 +46,16 @@ namespace MakerDenExtension
 
         private async void Setup()
         {
-            #region Lab4b Code to go between the #region and #endregion tags
+            #region Lab5a Code to go between the #region and #endregion tags
 
-            myTransformGroup.Children.Add(myTranslate);
-            orb.RenderTransform = myTransformGroup;
-
-            this.hat = await FEZHAT.CreateAsync();
-
-            timer = new DispatcherTimer();
-            this.timer.Interval = TimeSpan.FromMilliseconds(100);
-            this.timer.Tick += this.UpdateOrb;
-            this.timer.Start();
 
             #endregion
         }
 
         private void UpdateOrb(object sender, object e)
         {
-            #region Lab4c and Lab4d Code to go between the #region and #endregion tags
-
-            Temperature.Text = $"The temperature is {hat.GetTemperature().ToString("n2")}";
-            Light.Text = $"The light level is {hat.GetLightLevel().ToString("n4")}";
-
-            hat.GetAcceleration(out x, out y, out z);
-
-            computedColour = ComputeColour(x, y, z);
-
-            orb.Fill = new SolidColorBrush(computedColour);
-
-            ComputeOrbPosition(x, y);
-
-            orb.UpdateLayout(); // update the orb with the new colour and position
-
-            hat.D2.Color = hat.D3.Color = FezColour(computedColour); // set both Fez Hat RGB LEDs
-
-            dmxLight.Update(computedColour); // set colour on DMX RGB Light    
+            #region Lab5b, Lab6 and Lab7 Code to go between the #region and #endregion tags
+ 
 
             #endregion
         }

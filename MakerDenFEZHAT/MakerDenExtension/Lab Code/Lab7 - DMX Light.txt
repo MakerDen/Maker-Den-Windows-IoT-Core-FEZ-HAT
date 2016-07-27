@@ -5,6 +5,8 @@ hat.GetAcceleration(out x, out y, out z);
 
 computedColour = ComputeColour(x, y, z);
 
+computedColour.A = (byte)(255 * hat.GetLightLevel());  // change the orb brightness by setting the alpha channel
+
 orb.Fill = new SolidColorBrush(computedColour);
 
 ComputeOrbPosition(x, y);
