@@ -46,15 +46,15 @@ namespace MakerDenExtension
 
         private async void Setup()
         {
-            #region Lab5a Code to go between the #region and #endregion tags
+            #region Lab4b Code to go between the #region and #endregion tags
 
-
+          
             #endregion
         }
 
         private void UpdateOrb(object sender, object e)
         {
-            #region Lab5b, Lab6 and Lab7 Code to go between the #region and #endregion tags
+            #region Lab4c Code to go between the #region and #endregion tags
 
 
             #endregion
