@@ -54,11 +54,12 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.13": {
+      "Microsoft.Azure.Devices.Client/1.0.18": {
         "dependencies": {
           "Microsoft.AspNet.WebApi.Client": "5.2.3",
           "Microsoft.Azure.Amqp": "1.1.5",
-          "PCLCrypto": "1.0.86"
+          "PCLCrypto": "1.0.86",
+          "Validation": "2.2.8"
         },
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
@@ -2140,12 +2141,12 @@
           }
         }
       },
-      "Validation/2.0.6.15003": {
+      "Validation/2.2.8": {
         "compile": {
-          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
+          "lib/dotnet/Validation.dll": {}
         },
         "runtime": {
-          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
+          "lib/dotnet/Validation.dll": {}
         }
       }
     },
@@ -2201,11 +2202,12 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.13": {
+      "Microsoft.Azure.Devices.Client/1.0.18": {
         "dependencies": {
           "Microsoft.AspNet.WebApi.Client": "5.2.3",
           "Microsoft.Azure.Amqp": "1.1.5",
-          "PCLCrypto": "1.0.86"
+          "PCLCrypto": "1.0.86",
+          "Validation": "2.2.8"
         },
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
@@ -4367,12 +4369,12 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Validation/2.0.6.15003": {
+      "Validation/2.2.8": {
         "compile": {
-          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
+          "lib/dotnet/Validation.dll": {}
         },
         "runtime": {
-          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
+          "lib/dotnet/Validation.dll": {}
         }
       }
     },
@@ -4428,11 +4430,12 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.13": {
+      "Microsoft.Azure.Devices.Client/1.0.18": {
         "dependencies": {
           "Microsoft.AspNet.WebApi.Client": "5.2.3",
           "Microsoft.Azure.Amqp": "1.1.5",
-          "PCLCrypto": "1.0.86"
+          "PCLCrypto": "1.0.86",
+          "Validation": "2.2.8"
         },
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
@@ -6633,12 +6636,12 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Validation/2.0.6.15003": {
+      "Validation/2.2.8": {
         "compile": {
-          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
+          "lib/dotnet/Validation.dll": {}
         },
         "runtime": {
-          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
+          "lib/dotnet/Validation.dll": {}
         }
       }
     },
@@ -6694,11 +6697,12 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.13": {
+      "Microsoft.Azure.Devices.Client/1.0.18": {
         "dependencies": {
           "Microsoft.AspNet.WebApi.Client": "5.2.3",
           "Microsoft.Azure.Amqp": "1.1.5",
-          "PCLCrypto": "1.0.86"
+          "PCLCrypto": "1.0.86",
+          "Validation": "2.2.8"
         },
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
@@ -8869,12 +8873,12 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Validation/2.0.6.15003": {
+      "Validation/2.2.8": {
         "compile": {
-          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
+          "lib/dotnet/Validation.dll": {}
         },
         "runtime": {
-          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
+          "lib/dotnet/Validation.dll": {}
         }
       }
     },
@@ -8930,11 +8934,12 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.13": {
+      "Microsoft.Azure.Devices.Client/1.0.18": {
         "dependencies": {
           "Microsoft.AspNet.WebApi.Client": "5.2.3",
           "Microsoft.Azure.Amqp": "1.1.5",
-          "PCLCrypto": "1.0.86"
+          "PCLCrypto": "1.0.86",
+          "Validation": "2.2.8"
         },
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
@@ -11144,12 +11149,12 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Validation/2.0.6.15003": {
+      "Validation/2.2.8": {
         "compile": {
-          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
+          "lib/dotnet/Validation.dll": {}
         },
         "runtime": {
-          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
+          "lib/dotnet/Validation.dll": {}
         }
       }
     },
@@ -11205,11 +11210,12 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.13": {
+      "Microsoft.Azure.Devices.Client/1.0.18": {
         "dependencies": {
           "Microsoft.AspNet.WebApi.Client": "5.2.3",
           "Microsoft.Azure.Amqp": "1.1.5",
-          "PCLCrypto": "1.0.86"
+          "PCLCrypto": "1.0.86",
+          "Validation": "2.2.8"
         },
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
@@ -13380,12 +13386,12 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Validation/2.0.6.15003": {
+      "Validation/2.2.8": {
         "compile": {
-          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
+          "lib/dotnet/Validation.dll": {}
         },
         "runtime": {
-          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
+          "lib/dotnet/Validation.dll": {}
         }
       }
     },
@@ -13441,11 +13447,12 @@
           "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll": {}
         }
       },
-      "Microsoft.Azure.Devices.Client/1.0.13": {
+      "Microsoft.Azure.Devices.Client/1.0.18": {
         "dependencies": {
           "Microsoft.AspNet.WebApi.Client": "5.2.3",
           "Microsoft.Azure.Amqp": "1.1.5",
-          "PCLCrypto": "1.0.86"
+          "PCLCrypto": "1.0.86",
+          "Validation": "2.2.8"
         },
         "compile": {
           "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd": {}
@@ -15655,12 +15662,12 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Validation/2.0.6.15003": {
+      "Validation/2.2.8": {
         "compile": {
-          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
+          "lib/dotnet/Validation.dll": {}
         },
         "runtime": {
-          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
+          "lib/dotnet/Validation.dll": {}
         }
       }
     }
@@ -15748,16 +15755,17 @@
         "lib/uap10.0/Microsoft.Azure.Amqp.Uwp.dll"
       ]
     },
-    "Microsoft.Azure.Devices.Client/1.0.13": {
-      "sha512": "jlI5C5UTr5Yo4ggVwQi1FE76hFIDWhVAysfQaTzOX9nwOM+b9kevWvMtAuiIfxOxmEMLbRQvz4yUWEEGI9IiYg==",
+    "Microsoft.Azure.Devices.Client/1.0.18": {
+      "sha512": "I7AeQilMIFUn12wPfiMoHI4d6hMZHECdvWKlMjGKysZIwRDyUx2ibDSWm/PwVOdzSx3yCGjm61Hy4PqYQ9yobQ==",
       "type": "package",
-      "path": "Microsoft.Azure.Devices.Client/1.0.13",
+      "path": "Microsoft.Azure.Devices.Client/1.0.18",
       "files": [
-        "Microsoft.Azure.Devices.Client.1.0.13.nupkg.sha512",
+        "Microsoft.Azure.Devices.Client.1.0.18.nupkg.sha512",
         "Microsoft.Azure.Devices.Client.nuspec",
         "build/native/Microsoft.Azure.Devices.Client.targets",
         "lib/native/Microsoft.Azure.Devices.Client.winmd",
         "lib/net45/Microsoft.Azure.Devices.Client.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Microsoft.Azure.Devices.Client.PCL.dll",
         "lib/uap10.0/Microsoft.Azure.Devices.Client.winmd",
         "thirdpartynotice.txt"
       ]
@@ -22161,21 +22169,33 @@
         "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
     },
-    "Validation/2.0.6.15003": {
-      "sha512": "8vgCOG9mPeOd3xwyL20OT9RyOKq9PmJb0Iltzwj6eay38Cq2v6ojvpSDbc+sc6YXit+iAVyyvHTS29rBvDpdDQ==",
+    "Validation/2.2.8": {
+      "sha512": "DMNc7JhPlgRwnR+NNb+ldoluObL+RBw96aMoiZae/Looa4vgaAnIysmle/bV2OKqDNW9oUBDckPyfa2+sX6JdA==",
       "type": "package",
+      "path": "Validation/2.2.8",
       "files": [
-        "Validation.2.0.6.15003.nupkg.sha512",
+        "README.md",
+        "Validation.2.2.8.nupkg.sha512",
         "Validation.nuspec",
-        "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll",
-        "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.xml"
+        "lib/dotnet/Validation.dll",
+        "lib/dotnet/Validation.xml",
+        "lib/portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll",
+        "lib/portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.xml",
+        "lib/portable-net45+dnxcore50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.dll",
+        "lib/portable-net45+dnxcore50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/Validation.xml",
+        "tools/2013/RequiresNotNull.snippet",
+        "tools/2013/RequiresNotNullOrEmpty.snippet",
+        "tools/2015/RequiresNotNull.snippet",
+        "tools/2015/RequiresNotNullOrEmpty.snippet",
+        "tools/install_snippets.cmd",
+        "tools/uninstall_snippets.cmd"
       ]
     }
   },
   "projectFileDependencyGroups": {
     "": [
       "GHIElectronics.UWP.Shields.FEZHAT >= 0.1.0",
-      "Microsoft.Azure.Devices.Client >= 1.0.13",
+      "Microsoft.Azure.Devices.Client >= 1.0.18",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2"
     ],
     "UAP,Version=v10.0": []
