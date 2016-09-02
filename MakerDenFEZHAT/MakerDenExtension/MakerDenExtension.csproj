@@ -107,9 +107,10 @@
     <None Include="MakerDenExtension_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Lab Code\Lab4d - Accelerometer Change Colour.txt" />
     <Content Include="Lab Code\Lab5 xaml.txt" />
-    <Content Include="Lab Code\Lab5b - UpdateOrb Buttons.txt" />
-    <Content Include="Lab Code\Lab5a - Setup Orb.txt" />
+    <Content Include="Lab Code\Lab4c - UpdateOrb Buttons.txt" />
+    <Content Include="Lab Code\Lab4b - Setup Orb.txt" />
     <Content Include="Lab Code\Lab6 - Accelerometer.txt" />
     <Content Include="Lab Code\Lab7 - DMX Light.txt" />
     <Content Include="Properties\Default.rd.xml" />
